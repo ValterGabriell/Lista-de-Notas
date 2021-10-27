@@ -1,2 +1,7 @@
-# Lista-de-Notas
-O aplicativo consiste em um bloco de notas no qual o usuário pode customizar a cor de fundo de suas notas e salvar elas localmente usando o banco de dados interno do Android
+# Aplicativos-de-Notas
+![1](https://user-images.githubusercontent.com/63808405/139127142-ce145432-736e-4493-ac10-30694b3f89f3.png)
+
+-O salvamento dos dados é feito localmente utilizando a biblioteca de persistência de dados
+Room.
+
+-Utilizei arquitetura MVVM
