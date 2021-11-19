@@ -93,22 +93,23 @@ class MainActivity : AppCompatActivity() {
             setColors(btnCor3, view)
             setColors(btnCor4, view)
 
-            btnSave.setOnClickListener {
-                val colorDrawable = view.background as ColorDrawable
-                val colorId = colorDrawable.color
 
-                val notasModel = NotasModel()
-                notasModel.apply {
-                    titulo = etTitulo.text.toString()
-                    descricao = etDescricao.text.toString()
-                    color = colorId
+                btnSave.setOnClickListener {
+                    val colorDrawable = view.background as ColorDrawable
+                    val colorId = colorDrawable.color
+
+                    val notasModel = NotasModel()
+                    notasModel.apply {
+                        titulo = etTitulo.text.toString()
+                        descricao = etDescricao.text.toString()
+                        color = colorId
+                    }
+                    model.addNote(notasModel)
+                    alertDialog.dismiss()
+                    onResume()
                 }
-                model.addNote(notasModel)
-                alertDialog.dismiss()
-                onResume()
             }
 
-        }
     }
 
     private fun setColors(button: Button, view: View) {

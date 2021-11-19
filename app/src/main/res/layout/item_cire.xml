@@ -16,12 +16,15 @@
         android:id="@+id/linearBack"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/txtTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:gravity="center_horizontal"
             android:text="TextView"
             android:textSize="28sp"
@@ -32,16 +35,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
+            android:fontFamily="@font/montserrat"
             android:padding="4dp"
-            android:text="TextView" />
+            android:text="TextView"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
             android:text="Deslize para a esquerda para deletar"
-            android:textColor="@color/black" />
+            android:textColor="@color/funo1" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

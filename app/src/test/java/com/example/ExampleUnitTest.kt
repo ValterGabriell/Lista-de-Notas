@@ -1,4 +1,4 @@
-package com.example.notas
+package com.example
 
 import org.junit.Test
 
